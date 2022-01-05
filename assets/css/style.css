@@ -1,0 +1,215 @@
+/* [TODO] 리셋스타일 웹디자인기능사처럼 작업하지 않기~!(* 전체 태그에 주는것은 좋지 않은 코딩 습관입니당~! 폰트 같은 경우도 폰트는 상속되는 속성이기 때문에 최상위 아이에게만 줘도 무방합니다~! [물론 예외가 있긴 하지만~~! 해당 예외는 주한님이 해주신것처럼 해당 태그에 직접 넣어주시면 되시겠죵~!]) 1) 제공드린 코드에서 필요한것만 뽑아서 작업하시거나 2)다른사이트나, 블로그에 있는 reset 참고하셔서 modernize reset css 불러와서 사용하시거나~! */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {color: #000; text-decoration: none;}
+h1,h2,div,span,p {font-family: 'Roboto','NotoSans';}
+
+.wrap {   
+    
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner h2 img {
+    width: 100%;
+    height: auto;
+}
+
+.hd {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.281);
+    position: fixed;
+}
+
+.hd .inner {
+    text-align: center;
+}
+
+.hd .gnb {    
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;    
+}
+
+.hd .gnb .dep1 {
+    line-height: 3.7;
+}
+
+.hd .gnb .dep1 a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.hd .gnb .dep1 a:hover {
+    color: #fff;
+}
+
+.hd .gnb .dep1:hover {
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+/* [TODO] 스타일 작업할때 .inner(레이아웃용 스타일) 타고 들어가지 않기(후에 inner가 유지보수시 마크업에서 없어진다고 생각하면~! 스타일을 다 벗겨내야하는 일이 발생을 하겟죵?!) */
+.about {
+    
+}
+.about .inner {  
+    text-align: center;  
+}
+
+.about h1 {
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.about .tit-txt span {
+    color: #444;
+    line-height: 2;
+}
+
+.about .left .photo img {
+    display: block;
+}
+
+.about .flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+.about .flex-box .right {
+    padding-top: 130px;
+    padding-left: 50px;
+    
+}
+ 
+.content-box .box h2 {
+    text-align: left;
+    padding-bottom: 25px;
+    font-size: 50px;
+}
+
+.content-box .box .txt-list{
+    display: flex;
+    justify-content: center;    
+}
+
+.content-box .box .txt-list .txt-info {
+    text-align: left;
+}
+
+.content-box .box .txt-list .txt-info2 {
+    text-align: left;
+    padding-left: 60px;
+}
+
+.content-box .box .txt-list ul li {
+    line-height: 2;
+}
+/* [TODO] 스타일 작업할때 .inner(레이아웃용 스타일) 타고 들어가지 않기(후에 inner가 유지보수시 마크업에서 없어진다고 생각하면~! 스타일을 다 벗겨내야하는 일이 발생을 하겟죵?!) */
+.portfolio {
+    height: 100px;
+}
+
+.portfolio .inner {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.portfolio .tit-txt h2 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+.portfolio .tabs-nav {
+    display: flex;
+    justify-content: center
+}
+
+.portfolio .tabs-nav li {
+    margin-left: 80px;
+    margin-top: 30px;
+    padding: 0 10px;
+    font-size: 26px;
+}
+
+.portfolio .tabs-nav li:hover {
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.portfolio .tabs-nav a:hover{
+    font-weight: bold;
+    color: #fff;
+}
+
+.portfolio .tabs-nav a.active {
+    font-weight: bold;
+}
+
+.portfolio .tabs-panel {
+    padding-top: 50px;
+}
+
+.portfolio .tabs-panel {
+    display: none;
+}
+
+.portfolio .tabs-panel.active {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+.portfolio .tabs-panel .left {
+    margin-top: 100px;
+}
+
+.portfolio .tabs-panel .left .btn {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border : 2px solid #000;
+    border-radius: 5px;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.portfolio .tabs-panel .left .btn::before {
+    content: "";
+    position: absolute;    
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.portfolio .tabs-panel .left .btn:hover a {
+    color: #fff;
+}
+
+.portfolio .tabs-panel .left .btn:hover::before {
+    transform: translateY(-100%);
+}
+
+.portfolio .tabs-panel .left .tit{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.portfolio .tabs-panel .left .txt {
+    margin-top: 30px;
+}
+
+.portfolio .tabs-panel .right .mokup img {
+    width: 700px;
+}
