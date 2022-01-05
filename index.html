@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOON Portfolio</title>
+    <!-- [TODO] SEO최적화 추가해주시기~ -->
+    <!-- font -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- css lib -->
+    <link rel="stylesheet" href="./assets/css/lib/slick.css">
+    <!-- js lib -->
+    <script src="./assets/js/lib/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/lib/slick.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="inner">
+                <ul class="gnb">
+                    <li class="dep1"><a href="#home">Home</a></li>
+                    <li class="dep1"><a href="#about">About</a></li>
+                    <li class="dep1"><a href="#portfolio">Portfolio</a></li>
+                    <li class="dep1"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="home" class="banner">
+            <h2><img src="./assets/images/main.gif" alt="main"></h2>
+        </section>
+        <section id="about" class="about">
+            <div class="inner">
+                <div class="tit-txt">
+                    <h1>About me</h1>
+                    <span>신입 웹디자이너 & 퍼블리셔 윤주한입니다</span>
+                </div>
+                <div class="flex-box">
+                    <div class="left">
+                        <div class="photo">
+                            <img src="./assets/images/photo.png" alt="xx">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="content-box">
+                            <div class="box">
+                                <h2>PROFILE</h2>
+                                <div class="txt-list">
+                                    <ul class="txt-info">
+                                        <li>NAME</li>
+                                        <li>AGES</li>
+                                        <li>ADDRESS</li>
+                                        <li>EMAIL</li>
+                                        <li>COMPLETION</li>
+                                    </ul>
+                                    <ul class="txt-info2">
+                                        <li>윤주한</li>
+                                        <li>33</li>
+                                        <li>부천시</li>
+                                        <li>choinasd@gmail.com</li>
+                                        <li>2021.07 - 2022.01 부천 그린아카데미<br>
+                                            웹디자인 UI/UX 웹퍼플리셔 과정 수료</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="inner">
+                <div class="tit-txt">
+                    <h2>PORTFOLIO</h2>
+                </div>                
+                <ul class="tabs-nav">
+                    <li><a href="#aesop" class="active">aesop</a></li>
+                    <li><a href="#glo">glo</a></li>
+                    <li><a href="#interior">interior</a></li>
+                    <li><a href="#visionstreetwear">visionstreetwear</a></li>
+                </ul>
+                <div id="aesop" class="tabs-panel active">                    
+                    <ul class="left">
+                        <li class="tit">01</li>
+                        <li class="tit">AESOP 이벤트페이지<br>(포트폴리오용)</li>
+                        <li class="txt">사용툴 : Photoshop 2021, Visual studio code</li>
+                        <li>기여도 : 기획, 디자인 100% + 퍼블리싱 100%</li>                        
+                        <li>이솝 겨울 이벤트 행사를 기획하고 페이지로 제작해 보았습니다.</li>                      
+                        <button class="btn"><a href="#">작업과정</a></button>
+                        <button class="btn"><a href="#" target="blank">사이트 바로가기</a></button>
+                    </ul>
+                    <div class="right">
+                        <div class="mokup">
+                            <img src="./assets/images/mokup_aesop.jpg" alt="aesop">
+                        </div>
+                    </div>                    
+                </div>
+                <div id="glo" class="tabs-panel">
+                    <ul class="left">
+                        <li class="tit">02</li>
+                        <li class="tit">glo 이벤트페이지<br>(포트폴리오용)</li>
+                        <li class="txt">사용툴 : Photoshop 2021, Visual studio code</li>
+                        <li>기여도 :기획, 디자인 100% + 퍼블리싱 100%</li>
+                        <li>글로 이벤트 할인 행사를 기획하고 페이지로 제작해 보았습니다.</li>
+                        <button class="btn"><a href="#">작업과정</a></button>
+                        <button class="btn"><a href="">사이트 바로가기</a></button>
+                    </ul>
+                    <div class="right">
+                        <div class="mokup">
+                            <img src="./assets/images/mokup_glo.jpg" alt="glo">
+                        </div>
+                    </div>
+                </div>
+                <div id="interior" class="tabs-panel">
+                    <ul class="left">
+                        <li class="tit">03</li>
+                        <li class="tit">interior 홈페이지 디자인<br>(포트폴리오용)</li>
+                        <li class="txt">사용툴 : Photoshop 2021, Visual studio code</li>
+                        <li>기여도 : 디자인 100% </li>
+                        <li>인테리어 메인페이지 디자인 및 구현</li>
+                        <button class="btn"><a href="#">작업과정</a></button>
+                        <button class="btn"><a href="">사이트 바로가기</a></button>
+                    </ul>
+                    <div class="right">
+                        <div class="mokup">
+                            <img src="./assets/images/mokup_interior.jpg" alt="interior">
+                        </div>
+                    </div>
+                </div>
+                <div id="visionstreetwear" class="tabs-panel">
+                    <ul class="left">
+                        <li class="tit">04</li>
+                        <li class="tit">visionstreetwear 리뉴얼<br>(포트폴리오용)</li>
+                        <li class="txt">사용툴 : Photoshop 2021, Visual studio code</li>
+                        <li>기여도 : 디자인 100%</li>
+                        <li>기존 visionstreetwear 홈페이지 리뉴얼 디자인</li>
+                        <button class="btn"><a href="#">작업과정</a></button>
+                        <button class="btn"><a href="">사이트 바로가기</a></button>
+                    </ul>
+                    <div class="right">
+                        <div class="mokup">
+                            <img src="./assets/images/mokup_vision.jpg" alt="vision">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
